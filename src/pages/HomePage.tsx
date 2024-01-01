@@ -4,12 +4,11 @@ import Categories from '../components/Categories/Categories';
 
 export default function HomePage() {
   return (
-    <div >
-      <NavBar/>
+    <div>
+      <NavBar />
 
-        <Categories/>
-        <ProductList/>
-      
+      <Categories />
+      <ProductList />
     </div>
   );
 }

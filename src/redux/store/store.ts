@@ -9,13 +9,13 @@ export const store = configureStore({
     selectCategory: selectCategory,
 
     [useGetAllProducts.reducerPath]: useGetAllProducts.reducer,
-    [useGetCategories.reducerPath]: useGetCategories.reducer
+    [useGetCategories.reducerPath]: useGetCategories.reducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(
       useGetAllProducts.middleware,
-      useGetCategories.middleware
-    )
+      useGetCategories.middleware,
+    ),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

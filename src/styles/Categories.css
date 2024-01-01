@@ -1,0 +1,44 @@
+.categories{
+    display: block;
+    margin: 0 10px 10px 10px;
+}
+
+.custom-container{
+    position: relative;
+    max-width: 1480px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-title{
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.category-title p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #044DC3;
+    padding-left: 5px;
+}
+
+#category-btn{
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+    height: 45px;
+    border: 1px solid #e2e7e9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .3s;
+}

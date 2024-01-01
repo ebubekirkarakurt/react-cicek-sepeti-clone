@@ -1,0 +1,32 @@
+#cart-counter{
+    position: absolute;
+    top: 1%;
+    right: 5%;    
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn{
+    background-color: #1059D0;
+    border-radius: 30px;
+    border: 0;
+    width: 140px;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn:hover{
+    cursor: pointer;
+}
+
+#btn p{
+   color: white;
+}
+

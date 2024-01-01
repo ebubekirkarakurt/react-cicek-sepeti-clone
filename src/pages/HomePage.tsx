@@ -1,12 +1,15 @@
-import React from 'react';
-import ProductList from '../components/ProductList';
+import ProductList from '../components/ProductList/ProductList';
+import NavBar from '../components/NavBar/NavBar';
+import Categories from '../components/Categories/Categories';
 
-type Props = {};
-
-export default function HomePage({}: Props) {
+export default function HomePage() {
   return (
-    <div>
-      <ProductList />
+    <div >
+      <NavBar/>
+
+        <Categories/>
+        <ProductList/>
+      
     </div>
   );
 }

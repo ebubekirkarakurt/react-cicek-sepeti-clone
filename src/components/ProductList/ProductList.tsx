@@ -2,8 +2,9 @@ import Rater from 'react-rater';
 import { useGetProductsQuery } from '../../service/useGetAllProducts';
 import '../../styles/ProductList.style.css';
 import 'react-rater/lib/react-rater.css';
-import { useAppSelector } from '../../hooks/hooks';
+import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 import { RootState } from '../../redux/store/store';
+import { addCart, cartList } from '../../redux/reducer/cartCounter';
 
 export default function ProductList() {
   const { data } = useGetProductsQuery('') || [];
@@ -11,6 +12,13 @@ export default function ProductList() {
   const categoryName = useAppSelector(
     (state: RootState) => state.selectCategory.value,
   );
+
+  const dispatch = useAppDispatch();
+
+  function addToListForCart(img: string, name: string, price: number) {
+    const newItem = [{ img, name, price }]
+    return newItem;
+  }
 
   return (
     <div>
@@ -73,7 +81,10 @@ export default function ProductList() {
                   <p id="price"> {element.fixedPrice}₺ </p>
 
                   <div className="btn">
-                    <button id="addToCartBtn">Sepete Ekle</button>
+                    <button id="addToCartBtn" onClick={() => {
+                      dispatch(addCart())
+                      dispatch(cartList(addToListForCart(element.image, element.name, element.price)))
+                    }}>Sepete Ekle</button>
                   </div>
                 </div>
               );

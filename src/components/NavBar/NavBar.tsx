@@ -1,13 +1,14 @@
 import { useState } from 'react';
-import '../../styles/Navbar.style.css';
-import '../../styles/Backgorund.css';
-import Background from './Background';
 import OrderIcon from './Icons/OrderIcon';
 import CartButton from './CartButton';
 import LogOutIcon from './Icons/LogOutIcon';
 import SearchIcon from './Icons/SearchIcon';
+import '../../styles/Navbar.style.css';
+import '../../styles/Backgorund.css';
+import '../../styles/SideBarMenu.style.css'
 
 export default function NavBar() {
+
   const [value, setValue] = useState('');
 
   return (
@@ -40,7 +41,6 @@ export default function NavBar() {
           </div>
         </div>
       </div>
-      <Background />
     </div>
   );
 }

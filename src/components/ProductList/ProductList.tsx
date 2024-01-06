@@ -35,7 +35,7 @@ export default function ProductList() {
                         ? `${element.image}`
                         : require('../../assets/logo.png')
                     }
-                    alt={`${element.name}`}
+                    alt="product-img"
                   />
                   <div className="category-container">
                     <p id="category-name"> {element.category} </p>
@@ -50,7 +50,10 @@ export default function ProductList() {
                   <p id="product-name"> {element.name} </p>
                   <p id="price"> {element.fixedPrice}₺ </p>
 
-                  <div className="btn">
+                  <div className="btn" onClick={() => {
+                      dispatch(addCart())
+                      dispatch(cartList(addToListForCart(element.image, element.name, element.price)))
+                  }}>
                     <button id="addToCartBtn">Sepete Ekle</button>
                   </div>
                 </div>
@@ -65,7 +68,7 @@ export default function ProductList() {
                         ? `${element.image}`
                         : require('../../assets/logo.png')
                     }
-                    alt={`${element.name}`}
+                    alt="product-img"
                   />
                   <div className="category-container">
                     <p id="category-name"> {element.category} </p>

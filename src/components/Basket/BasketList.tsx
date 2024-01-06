@@ -36,7 +36,7 @@ export default function BasketList() {
                                 <div className="content-div">
                                     <p id="product-name-title">{element.name}</p>
                                     <div id="end-of-card">
-                                        <p id="price">{element.price}₺</p>
+                                        <p id="product-price">{element.price}₺</p>
                                         <p>1 adet</p>
                                         <p>Ç</p>
                                     </div>

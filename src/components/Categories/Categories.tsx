@@ -9,7 +9,6 @@ import ProductListTitle from '../ProductList/ProductListTitle';
 import ProductList from '../ProductList/ProductList';
 
 export default function Categories() {
-  const [selectedCategory, setSelectedCategory] = useState('Tüm Kategoriler');
 
   const dispatch = useDispatch();
 
@@ -26,7 +25,6 @@ export default function Categories() {
         <a
           id="category-btn"
           onClick={() => {
-            setSelectedCategory('Tüm Kategoriler');
             dispatch(category('Tüm Kategoriler'));
           }}
         >
@@ -39,7 +37,6 @@ export default function Categories() {
                 <a
                   id="category-btn"
                   onClick={() => {
-                    setSelectedCategory(element.categoryName);
                     dispatch(category(element.categoryName));
                   }}
                 >

@@ -29,8 +29,8 @@ export default function NavBar() {
         </div>
         <div className="buttons">
           <div id="navbar-option">
-            <OrderIcon />
-            <p>Siparişlerim</p>
+              <OrderIcon />
+              <p>Siparişlerim</p>
           </div>
           <div id="navbar-option">
             <LogOutIcon />

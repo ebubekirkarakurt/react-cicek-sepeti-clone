@@ -18,7 +18,7 @@ export default function BasketList() {
     }
 
     return (
-        <div style={{overflow:'scroll', scrollbarWidth:'none', margin:15}}>
+        <div className="basket-list">
             {cartList.map((nestedArray: any, index: number) => (
                 <div key={index}>
                     {nestedArray.map((element: any, nestedIndex: number) => (

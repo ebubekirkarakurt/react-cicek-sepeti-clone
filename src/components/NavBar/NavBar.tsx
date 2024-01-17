@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import OrderIcon from './Icons/OrderIcon';
 import CartButton from './CartButton';
-import LogOutIcon from './Icons/LogOutIcon';
 import SearchIcon from './Icons/SearchIcon';
 import '../../styles/Navbar.style.css';
 import '../../styles/Backgorund.css';
@@ -28,14 +26,6 @@ export default function NavBar() {
           />
         </div>
         <div className="buttons">
-          <div id="navbar-option">
-              <OrderIcon />
-              <p>Siparişlerim</p>
-          </div>
-          <div id="navbar-option">
-            <LogOutIcon />
-            <p>Çıkış yap</p>
-          </div>
           <div id="cart">
             <CartButton />
           </div>

@@ -5,10 +5,11 @@ import Background from '../components/NavBar/Background';
 import '../styles/global.css'
 
 export default function HomePage() {
+
   return (
     <div>
      <div style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
-        <NavBar />
+        <NavBar/>
       </div>
       <div style={{paddingTop:90}}>
         <Background />

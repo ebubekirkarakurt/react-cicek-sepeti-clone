@@ -2,8 +2,8 @@ import { useAppDispatch, useAppSelector } from '../../hooks/hooks'
 import { setVisibility } from '../../redux/reducer/sidebarVisibility';
 import { RootState } from '../../redux/store/store';
 import '../../styles/SideBarMenu.style.css'
-import BasketList from '../Basket/BasketList';
-import CartIcon from '../NavBar/Icons/CartIcon';
+import BasketList from '../basket/BasketList';
+import CartIcon from '../navbar/Icons/CartIcon';
 
 
 export default function SideBarMenu() {

@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import CartButton from './CartButton';
-import SearchIcon from './Icons/SearchIcon';
 import '../../styles/Navbar.style.css';
 import '../../styles/Backgorund.css';
 import '../../styles/SideBarMenu.style.css'
+import CartButton from './CartButton';
+import SearchIcon from './Icons/SearchIcon';
 
 export default function NavBar() {
 

@@ -1,8 +1,9 @@
-import ProductList from '../components/ProductList/ProductList';
-import NavBar from '../components/NavBar/NavBar';
-import Categories from '../components/Categories/Categories';
-import Background from '../components/NavBar/Background';
+import ProductList from '../components/products/ProductList';
+import NavBar from '../components/navbar/NavBar';
+import Categories from '../components/categories/Categories';
+import Background from '../components/navbar/Background';
 import '../styles/global.css'
+import Footer from '../components/footer/Footer';
 
 export default function HomePage() {
 
@@ -15,6 +16,9 @@ export default function HomePage() {
         <Background />
         <Categories />
         <ProductList />
+      </div>
+      <div className="footer">
+        <Footer/>
       </div>
     </div>
   );

@@ -1,12 +1,10 @@
-import { useState } from 'react';
 import { useGetCategoriesQuery } from '../../service/useGetCategories';
 import '../../styles/Categories.css';
 import { useDispatch } from 'react-redux';
 import { category } from '../../redux/reducer/selectCategory';
+import NavCat from '../navbar/NavCat';
+import ProductListTitle from '../products/ProductListTitle';
 import CategoryIcon from './Icons/CategoryIcon';
-import NavCat from '../NavBar/NavCat';
-import ProductListTitle from '../ProductList/ProductListTitle';
-import ProductList from '../ProductList/ProductList';
 
 export default function Categories() {
 

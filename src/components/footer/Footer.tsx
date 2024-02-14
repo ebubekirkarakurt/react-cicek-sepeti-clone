@@ -1,13 +1,17 @@
 import React from 'react'
 import '../../styles/Footer.style.css'
+import FooterCopyRight from './FooterCopyright'
+import FooterDescription from './FooterDescription'
+import AppArea from './AppArea'
 
 
 export default function Footer() {
   return (
     <footer>
         <div className='footer-main'>
+            <AppArea/>
             <div className="footer-main-info">
-                <div className='footer-logo'>
+                <div >
                     <img id='logo' src={require("../../assets/logo.png")} alt="logo"/>
                     <div className='footer-socials'>
                         <a>
@@ -24,13 +28,9 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className="footer-info-text">
-                        <p>ÇiçekBahçem.com olarak kişisel verilerinizin gizliliğini <br/>  önemsiyoruz. 6698 sayılı Kişisel Verilerin Korunması Kanunu <br/> kapsamında oluşturduğumuz aydınlatma metnine buradan ulaşabilirsiniz.</p>
-                    </div>
+                    ÇiçekBahçem.com olarak kişisel verilerinizin gizliliğini {<br />} önemsiyoruz. 6698 sayılı Kişisel Verilerin Korunması {<br />} Kanunu kapsamında oluşturduğumuz aydınlatma metnine {<br />} buradan ulaşabilirsiniz.                    </div>
                 </div>
-            </div>
-            
-          
-            <div className='row' >
+                <div className='row' >
                     <h4 id='footer-link-title' >Faydali bilgiler</h4>
                     <a href=" " id='link-btn' >Çiçek Bakımı</a>
                     <a href=" " id='link-btn' >Çiçek Eşliğinde Notlar</a>
@@ -67,6 +67,10 @@ export default function Footer() {
                         <a href=" " id='link-btn' >Hesap Bilgileri</a>
                 </div>
             </div>
+            
+            </div>
+            <FooterDescription/>
+            <FooterCopyRight/>
         </div>
     </footer>
   )

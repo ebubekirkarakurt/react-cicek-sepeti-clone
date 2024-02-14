@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../styles/Footer.style.css'
 
 const FooterCopyRight = () => {
     return (

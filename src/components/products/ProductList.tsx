@@ -96,6 +96,7 @@ export default function ProductList() {
             }
           })}
       </div>
+      <div className='product-footer-line' ></div>
     </div>
   );
 }

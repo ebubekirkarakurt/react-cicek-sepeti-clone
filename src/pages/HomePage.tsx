@@ -17,6 +17,7 @@ export default function HomePage() {
         <Categories />
         <ProductList />
       </div>
+      <br />
       <div className="footer">
         <Footer/>
       </div>

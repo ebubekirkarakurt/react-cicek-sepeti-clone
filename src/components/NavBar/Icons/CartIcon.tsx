@@ -1,8 +1,8 @@
-type Props={
-  color:string
-}
+type Props = {
+  color: string;
+};
 
-export default function CartIcon({color}: Props) {
+export default function CartIcon({ color }: Props) {
   return (
     <svg
       style={{ paddingRight: 10 }}
@@ -10,7 +10,7 @@ export default function CartIcon({color}: Props) {
       width={24}
       height={24}
       fill="none"
-      stroke= {color}
+      stroke={color}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}

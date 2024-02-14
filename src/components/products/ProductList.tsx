@@ -16,7 +16,7 @@ export default function ProductList() {
   const dispatch = useAppDispatch();
 
   function addToListForCart(img: string, name: string, price: number) {
-    const newItem = [{ img, name, price }]
+    const newItem = [{ img, name, price }];
     return newItem;
   }
 
@@ -50,10 +50,21 @@ export default function ProductList() {
                   <p id="product-name"> {element.name} </p>
                   <p id="price"> {element.fixedPrice}₺ </p>
 
-                  <div className="btn" onClick={() => {
-                      dispatch(addCart())
-                      dispatch(cartList(addToListForCart(element.image, element.name, element.price)))
-                  }}>
+                  <div
+                    className="btn"
+                    onClick={() => {
+                      dispatch(addCart());
+                      dispatch(
+                        cartList(
+                          addToListForCart(
+                            element.image,
+                            element.name,
+                            element.price,
+                          ),
+                        ),
+                      );
+                    }}
+                  >
                     <button id="addToCartBtn">Sepete Ekle</button>
                   </div>
                 </div>
@@ -84,10 +95,23 @@ export default function ProductList() {
                   <p id="price"> {element.fixedPrice}₺ </p>
 
                   <div className="btn">
-                    <button id="addToCartBtn" onClick={() => {
-                      dispatch(addCart())
-                      dispatch(cartList(addToListForCart(element.image, element.name, element.price)))
-                    }}>Sepete Ekle</button>
+                    <button
+                      id="addToCartBtn"
+                      onClick={() => {
+                        dispatch(addCart());
+                        dispatch(
+                          cartList(
+                            addToListForCart(
+                              element.image,
+                              element.name,
+                              element.price,
+                            ),
+                          ),
+                        );
+                      }}
+                    >
+                      Sepete Ekle
+                    </button>
                   </div>
                 </div>
               );
@@ -96,7 +120,7 @@ export default function ProductList() {
             }
           })}
       </div>
-      <div className='product-footer-line' ></div>
+      <div className="product-footer-line"></div>
     </div>
   );
 }

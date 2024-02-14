@@ -7,7 +7,6 @@ import ProductListTitle from '../products/ProductListTitle';
 import CategoryIcon from './Icons/CategoryIcon';
 
 export default function Categories() {
-
   const dispatch = useDispatch();
 
   const { data } = useGetCategoriesQuery('') || [];

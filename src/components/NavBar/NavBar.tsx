@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import '../../styles/Navbar.style.css';
 import '../../styles/Backgorund.css';
-import '../../styles/SideBarMenu.style.css'
+import '../../styles/SideBarMenu.style.css';
 import CartButton from './CartButton';
 import SearchIcon from './Icons/SearchIcon';
 
 export default function NavBar() {
-
   const [value, setValue] = useState('');
 
   return (
@@ -16,7 +15,7 @@ export default function NavBar() {
           <img id="logo" src={require('../../assets/logo.png')} alt="logo" />
         </div>
         <div className="search-bar">
-          <div id='searchicon' >
+          <div id="searchicon">
             <SearchIcon />
           </div>
           <input

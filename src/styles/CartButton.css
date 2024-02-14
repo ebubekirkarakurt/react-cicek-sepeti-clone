@@ -1,16 +1,15 @@
 #cart-counter {
   position: absolute;
-  top: 1%;
-  right: 5%;
+  top: -30%;
+  right: 0%;
   width: 30px;
   height: 30px;
   background-color: red;
   border-radius: 100px;
-  align-items: center;
-  justify-content: center;
 }
 
 #btn {
+  position: relative;
   background-color: #1059d0;
   border-radius: 30px;
   border: 0;

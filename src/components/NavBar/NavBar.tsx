@@ -16,7 +16,9 @@ export default function NavBar() {
           <img id="logo" src={require('../../assets/logo.png')} alt="logo" />
         </div>
         <div className="search-bar">
-          <SearchIcon />
+          <div id='searchicon' >
+            <SearchIcon />
+          </div>
           <input
             id="input"
             type="text"

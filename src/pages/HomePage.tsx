@@ -1,9 +1,9 @@
-import ProductList from '../components/products/ProductList';
-import Categories from '../components/categories/Categories';
-import Background from '../components/navbar/Background';
 import '../styles/global.css';
 import Footer from '../components/footer/Footer';
 import NavBar from '../components/navbar/NavBar';
+import Background from '../components/navbar/Background';
+import Categories from '../components/categories/Categories';
+import ProductList from '../components/products/ProductList';
 
 export default function HomePage() {
   return (
